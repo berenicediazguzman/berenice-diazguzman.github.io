@@ -1,0 +1,528 @@
+<!--
+Facultad de Arquitectur
+Colegio de Diseño Grafico
+Diaz Guzman Berenice 
+202034187-->
+<html>
+    
+    <head>
+    <title>TABLAS</title>
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                width: 100%;
+                padding: 30px;
+            }
+            header{
+                width: auto;
+                background-color: coral;
+                color: bisque;
+            }
+            h1{
+                width: 80%;
+                display: inline-block;
+                text-align: center;
+            }
+            div{
+                width: 15%;
+                display: inline-block;
+                margin-left: 50px;
+            }
+            nav{
+                height: auto;
+                background-color: darkorange;
+            }
+            main{
+                height: auto;
+                background-color: lightcoral;
+            }
+            footer{
+                height: 60px;
+                background-color: darkorange;
+            }
+            section{
+                width: 70%;
+                height: auto;
+                background-color: aliceblue;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                color: saddlebrown;
+                padding: 30px;
+            }
+            h2{
+                margin: auto;
+            }
+            header,footer{
+                text-align: center;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 10%;
+                background-color: beige;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                list-style-type: none;
+                padding: 10px;
+                display: inline-block;
+                 border-radius: 10px;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+             a{
+                text-decoration: none;
+            }
+             a:link{
+            color: saddlebrown;
+        }
+        a:visited{
+            color: saddlebrown;
+        }
+        a:active{
+            
+        }
+        a:hover{
+            color: saddlebrown;
+        }
+            nav ul li:hover{
+                width: 10%;
+                background-color:burlywood; 
+            }
+            nav ul li a:hover{
+                color:  beige;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+            table{
+                background-color: antiquewhite;
+            }
+            #tab_buap{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;
+            }
+            #tab_buap th{
+                background-color: bisque;
+                color: maroon;
+                height: 50px;
+            }
+            #tab_buap td{
+                background-color: azure;
+                color: blueviolet;
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_buap th,#tab_buap td{
+                border-bottom-width: 3px;
+                border-color: burlywood;
+                border-style: solid;
+            }
+            #tab_libros{
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+                
+            }
+            #tab_libros th{
+                height: 50px;
+                background-color: burlywood;
+                color: saddlebrown;
+            }
+            #tab_libros tbody tr:nth-child(even){
+                background-color: burlywood;
+                color: saddlebrown;
+            }
+             #tab_libros tbody tr:nth-child(odd){
+                background-color:bisque;
+                 color: saddlebrown;
+            }
+            #tab_libros tfooot tr{
+                background-color: rosybrown;
+                color: saddlebrown;
+            }
+            #tab-libros td{
+                height: 30px;
+                padding: 20px;
+                border-collapse: collapse;
+            }
+            #tab_pelis{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #tb_pelis th{
+                background-color:darkseagreen;
+                color: darkgreen;
+                height: 50px;
+                padding: 10px;
+            }
+            #tab_ pelis th, #tab_pelis td{
+                border-width: 3px;
+                border-style: solid;
+                border-color: darkolivegreen;
+            }
+            #tab_pelis td{
+                height: 30px;
+                padding: 20px;
+            }
+            #tab_pelis tbody tr:hover{
+                background-color: darkseagreen;
+            }
+            #tab_series{
+                width: 1500px;
+                border-collapse: collapse;
+                background-color: burlywood;
+            }
+            #tab_series th, #tab_serier td{
+                border: 1px solid saddlebrown;
+                padding: 10px;
+            }
+            #tab_series th{
+                background-color: burlywood;
+                color: saddlebrown;
+            }
+           
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <div><a href="../Index.html"><img style="width: 32px" src="../imagenes/casa.png"></a></div>
+        <h1>TABLAS EN HTML</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                   
+                   <li><a href="../html/Diaz%20Guzman%20Berenice-formatos.html">Formatos</a></li>
+                   <li><a href="../html/Diaz%20Guzman%20Berenice-Listas.html">Listas</a></li>
+                   <li><a href="../html/Diaz_Guzman_Berenice-Enlaces.html">Enlaces</a></li>
+                   <li><a href="../html/Diaz%20Guzman%20Berenice-Tablas.html">Tablas</a></li>
+                   <li><a href="../html/imagnes.html">Imagenes</a></li>
+                   <li><a href="../html/audios.html">Audios</a></li>
+                   <li><a href="../html/Diaz_Guman_Berenice-Videos.html">Videos</a></li>
+                   <li><a href="../html/Berenice_Diaz_Guzman-Formularios.html">Formularios</a></li>
+            </ul>
+        
+        </nav>
+        <main>
+            
+            <section>
+                <h2>Tablas simple</h2>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor auctor neque. Ut mi felis, finibus ac interdum sed, ullamcorper lobortis risus. Morbi arcu ex, venenatis ac lectus a, ornare bibendum libero. Vivamus nec sagittis dolor. Donec efficitur mattis quam non volutpat. Aenean pellentesque turpis eget vehicula convallis. Etiam in sem et libero sodales auctor. In lacinia elementum risus non.</p>
+                <table id="tab_buap" border="1">
+                    <thead>
+                        <tr>
+                            <th> Matricula</th>
+                            <th> Nomre</th>
+                            <th> Facultad </th>
+                            <th> Celular</th>
+                            <th> Emil</th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202013645</td>
+                            <td>Laura Lopez</td>
+                            <td>Medicina</td>
+                            <td>7845222154</td>
+                            <td>laura_lopm@gmail.com</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>202175894</td>
+                            <td>Francisco Martinez</td>
+                            <td>Arquitectura</td>
+                            <td>7971326594</td>
+                            <td>Paco_malop@gmail.com</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>20247895</td>
+                            <td>Claudia Ochoa</td>
+                            <td>Quimica</td>
+                            <td>5579863782</td>
+                            <td>Clau_8choa@gmail.com</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>202274569</td>
+                            <td>Valdemar Juarez</td>
+                            <td>Cultura fisica</td>
+                            <td>3856743598</td>
+                            <td>Valde_juar@gmaol.com</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>20234638</td>
+                            <td>Samanatha Guzman </td>
+                            <td>Aquitectura</td>
+                            <td>7971183838</td>
+                            <td>Sam_156guz@gmail.com</td>
+                        
+                        </tr>
+                         <tr>
+                            <td>20234638</td>
+                            <td>Samanatha Guzman </td>
+                            <td>Aquitectura</td>
+                            <td>7971183838</td>
+                            <td>Sam_156guz@gmail.com</td>
+                        
+                        </tr>
+                    
+                    </tbody>
+                
+                
+                </table>
+
+            </section>
+            
+            <section>
+                <h2>Tablas tipo cebra</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl odio, consequat quis viverra ut, pharetra vel ex. Donec et risus neque.Pellentesque semper, dui id blandit accumsan, mauris velit pretium ligula, et facilisis felis ligula quis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat magna sit amet aliquam sollicitudin. Vestibulum lobortis erat vel dapibus porttitor. Morbi pretium odio quis lacus dignissim, sit amet mattis nunc tristique. Nullam rutrum ante in lorem euismod, in elementum erat pretium. Morbi condimentum, dolor quis vestibulum porta, sem purus facilisis tortor, quis gravida nibh justo in mauris.Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                <table id=tab_libros border="1">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Autor</th>
+                            <th>Año</th>
+                            <th>Editorial</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pedro Páramo</td>
+                            <td>Juan Rulfo</td>
+                            <td>1955</td>
+                            <td>Fondo de Cultura Economica</td>
+                            <td>$250.00</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Cien años de soledad</td>
+                            <td>Grabiel García Márquez</td>
+                            <td>1967</td>
+                            <td>Editoral Sudamericana</td>
+                            <td>$300.00</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>La muerte de Artemio Curz</td>
+                            <td>Laura Esquivel</td>
+                            <td>1989</td>
+                            <td>Editorial Planeta</td>
+                            <td>$200.00</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Los de abajo</td>
+                            <td>Mariano Azula</td>
+                            <td>1908</td>
+                            <td>Editorial Porrúa</td>
+                            <td>$120.00</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>El jardin de las mariposas</td>
+                            <td>Dot Huthison</td>
+                            <td>2025</td>
+                            <td>Editorial Planeta</td>
+                            <td>$300.00</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Volver a empezar</td>
+                            <td>Colleen Hoover</td>
+                            <td>2025</td>
+                            <td>Editorial Planeta</td>
+                            <td>$350.00</td>
+                        
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>TOTAL:</td>
+                            <td>$1,520.00</td>
+                        
+                        </tr>
+                    </tfoot>
+                
+                </table>
+                    
+            
+            </section>
+            <section>
+                <h2>Tablas hover</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl odio, consequat quis viverra ut, pharetra vel ex. Donec et risus neque. Pellentesque semper, dui id blandit accumsan, mauris velit pretium ligula, et facilisis felis ligula quis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat magna sit amet aliquam sollicitudin. Vestibulum lobortis erat vel dapibus porttitor. Morbi pretium odio quis lacus dignissim, sit amet mattis nunc tristique. Nullam rutrum ante in lorem euismod, in elementum erat pretium. Morbi condimentum, dolor quis vestibulum porta, sem purus facilisis tortor, quis gravida nibh justo in mauris.Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                <table id="tab_pelis" border="1">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Diector</th>
+                            <th>Año</th>
+                            <th>Productora</th>
+                            <th>Duración</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Avatar</td>
+                            <td>Jaimes Cameron</td>
+                            <td>2009</td>
+                            <td>Lightstorm Entertaunment</td>
+                            <td>162 min</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Vengadores Endgame</td>
+                            <td>Anthony y joe Russo</td>
+                            <td>2019</td>
+                            <td>Marvel Studios</td>
+                            <td>181 min</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Titanic</td>
+                            <td>James Cameron</td>
+                            <td>1997</td>
+                            <td>Paramount Pictures, 20th Century Fox</td>
+                            <td>195 min</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Star Wars: The Force Awakens</td>
+                            <td>J.J. Abrams</td>
+                            <td>2015</td>
+                            <td>Lucasfilm, Walt Disney Studios</td>
+                            <td>138 min</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Avengers: Infinity War</td>
+                            <td>Anthony y Joe Russo</td>
+                            <td>2018</td>
+                            <td>Marvel Studios</td>
+                            <td>149 min</td>
+                        
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    
+                    </tfoot>
+                
+                </table>
+            
+            </section> 
+            
+            <section style="overflow-x: auto">
+                <h2>Tabla overflow-x</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl odio, consequat quis viverra ut, pharetra vel ex. Donec et risus neque. Pellentesque semper, dui id blandit accumsan, mauris velit pretium ligula, et facilisis felis ligula quis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat magna sit amet aliquam sollicitudin. Vestibulum lobortis erat vel dapibus porttitor. Morbi pretium odio quis lacus dignissim, sit amet mattis nunc tristique. Nullam rutrum ante in lorem euismod, in elementum erat pretium. Morbi condimentum, dolor quis vestibulum porta, sem purus facilisis tortor, quis gravida nibh justo in mauris.Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <table id="tab_series">
+                    <thead>
+                        <tr>
+                            <th>Serie</th>
+                            <th>Año</th>
+                            <th>Genero</th>
+                            <th colspan="2">Creador</th>
+                            <th colspan="2">Pais</th>
+                            <th>Temporadas</th>
+                        
+                        </tr>
+                    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hora de aventura</td>
+                            <td>2018</td>
+                            <td>Fantacia</td>
+                            <td>Pendloten ward</td>
+                            <td></td>
+                            <td>Estados unidos</td>
+                            <td>Suicia</td>
+                            <td>10 temporadas</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Dr. house</td>
+                            <td>2004</td>
+                            <td>Drama medico</td>
+                            <td>David Shore</td>
+                            <td></td>
+                            <td>Estados Unidos</td>
+                            <td></td>
+                            <td>8 temporadas</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Belleza Verdadera</td>
+                            <td>2020</td>
+                            <td>Romance</td>
+                            <td>Kim Sang-hyup</td>
+                            <td></td>
+                            <td>Corea</td>
+                            <td></td>
+                            <td>1 temporada</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Shogun</td>
+                            <td>2024</td>
+                            <td>Drama historica</td>
+                            <td>Rahel kondor</td>
+                            <td>Justin Marks</td>
+                            <td></td>
+                            <td>Japon</td>
+                            <td></td>
+                            <td>1 tempoada</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Club de cuervos</td>
+                            <td>2015</td>
+                            <td>Comedia dramatica </td>
+                            <td>Michael lam</td>
+                            <td></td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td>4 temporadas</td>
+                        
+                        </tr>
+                       
+                    
+                    </tbody>
+                    <tfoot>
+                
+                    
+                    </tfoot>
+                
+                </table>
+            
+            </section>
+            
+        </main>
+        
+        <footer>
+         <h6>Elvorado por Berenice Diaz Guzman</h6>
+        </footer>
+    
+    
+    </body>
+
+</html>
